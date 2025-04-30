@@ -2,37 +2,36 @@ import Counter from './components/Counter';
 import LayoutDemo from './components/LayoutDemo';
 import WorkerDemo from './components/WorkerDemo';
 import TailwindCard from './components/TailwindCard';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="p-8 space-y-8 bg-gray-50 min-h-screen">
+    <>
+      <Navbar />
+      <div className="hero min-h-screen bg-gradient-to-br from-blue-400 to-purple-600 flex flex-col items-center justify-center">
+        <br />
+        <br />
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">1. React Re-Render Demo</h2>
+          <Counter />
+        </section>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
-        <h1 className="text-white text-4xl font-bold">Tailwind is Working!</h1>
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">2. Flexbox vs Grid Demo</h2>
+          <LayoutDemo />
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">3. Web Worker Demo</h2>
+          <WorkerDemo />
+        </section>
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">4. Tailwind Drop Shadow Demo</h2>
+          <TailwindCard />
+        </section>
       </div>
-
-      <h1 className="text-4xl font-bold mb-8 text-center">Elicit Demo</h1>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">1. React Re-Render Demo</h2>
-        <Counter />
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">2. Flexbox vs Grid Demo</h2>
-        <LayoutDemo />
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">3. Web Worker Demo</h2>
-        <WorkerDemo />
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">4. Tailwind Drop Shadow Demo</h2>
-        <TailwindCard />
-      </section>
-    </div>
+    </>
   );
 }
 
