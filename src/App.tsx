@@ -9,27 +9,31 @@ function App() {
     <>
       <Navbar />
       <div className="hero min-h-screen bg-gradient-to-br from-blue-400 to-purple-600 flex flex-col items-center justify-center">
-        <br />
-        <br />
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">1. React Re-Render Demo</h2>
-          <Counter />
-        </section>
+        <h1 className="text-4xl font-bold text-white">Welcome to the Elicit Tech Stack Demo</h1>
+        <p className="text-lg text-white mt-4">Scroll down to explore</p>
+      </div>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">2. Flexbox vs Grid Demo</h2>
-          <LayoutDemo />
-        </section>
+      <div className="bg-gray-100 py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Demos</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+              <Counter />
+            </div>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">3. Web Worker Demo</h2>
-          <WorkerDemo />
-        </section>
+            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+              <LayoutDemo />
+            </div>
 
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">4. Tailwind Drop Shadow Demo</h2>
-          <TailwindCard />
-        </section>
+            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+              <WorkerDemo />
+            </div>
+
+            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+              <TailwindCard />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
