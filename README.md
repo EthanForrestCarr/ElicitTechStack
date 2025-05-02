@@ -1,4 +1,4 @@
-# Elicit Knowledge Demonstrator
+# Elicit Tech Stack
 
 This is a small React + TypeScript project built to demonstrate knowledge relevant to Elicit's front-end engineering role. It addresses the key technical questions outlined in the job listing:
 
