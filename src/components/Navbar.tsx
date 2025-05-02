@@ -89,8 +89,7 @@ const Navbar = () => {
 
             {/* Sliding Mobile Menu */}
             <div
-                className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-                    } transition-transform duration-300 ease-in-out z-40`}
+                className={`fixed top-0 right-0 w-64 h-screen bg-white shadow-lg transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40`}
             >
                 <div className="flex flex-col p-4 space-y-4">
                     <button
@@ -143,14 +142,6 @@ const Navbar = () => {
                     </a>
                 </div>
             </div>
-
-            {/* Overlay */}
-            {isMenuOpen && (
-                <div
-                    onClick={toggleMenu}
-                    className="fixed inset-0 bg-black bg-opacity-50 z-30"
-                ></div>
-            )}
         </nav>
     );
 };
