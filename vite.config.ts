@@ -11,4 +11,7 @@ export default defineConfig({
   server: {
     open: true,
   },
+  preview: {
+    allowedHosts: ['elicittechstack.onrender.com']
+  }
 })
