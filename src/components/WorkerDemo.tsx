@@ -21,7 +21,7 @@ const WorkerDemo = () => {
 
   return (
     <div className="space-y-4">
-      <h3 className="text-xl font-semibold mb-2">Web Worker Demo</h3>
+      <h3 className="text-xl font-semibold mb-2">Web Worker</h3>
       <p className="text-gray-700 mb-4">
         A Web Worker to calculate all prime numbers up to 10,000.
       </p>

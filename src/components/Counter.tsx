@@ -8,7 +8,7 @@ const Counter = () => {
   return (
     <div className="space-y-4">
       <div>
-        <h3 className="text-xl font-semibold mb-2">React Re-Render Demo</h3>
+        <h3 className="text-xl font-semibold mb-2">React Re-Render</h3>
         <p className="text-gray-700 mb-4">
           Common use cases for re-rendering:
         </p>
