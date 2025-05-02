@@ -17,19 +17,19 @@ function App() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Demos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+            <div id="react-re-render" className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
               <Counter />
             </div>
 
-            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+            <div id="flexbox-vs-grid" className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
               <LayoutDemo />
             </div>
 
-            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+            <div id="web-worker" className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
               <WorkerDemo />
             </div>
 
-            <div className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
+            <div id="tailwind-card" className="p-4 rounded-lg shadow-md bg-gradient-to-br from-purple-200 to-blue-200">
               <TailwindCard />
             </div>
           </div>

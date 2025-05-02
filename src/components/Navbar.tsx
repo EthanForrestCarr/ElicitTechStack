@@ -36,28 +36,28 @@ const Navbar = () => {
                     {/* Navigation Links (Desktop) */}
                     <div className="hidden md:flex space-x-6">
                         <a
-                            href="#section1"
+                            href="#react-re-render"
                             className="text-gray-800 hover:text-gray-600 transition duration-300"
                         >
-                            Section 1
+                            React Re-Render
                         </a>
                         <a
-                            href="#section2"
+                            href="#flexbox-vs-grid"
                             className="text-gray-800 hover:text-gray-600 transition duration-300"
                         >
-                            Section 2
+                            Flexbox vs Grid
                         </a>
                         <a
-                            href="#section3"
+                            href="#web-worker"
                             className="text-gray-800 hover:text-gray-600 transition duration-300"
                         >
-                            Section 3
+                            Web Worker
                         </a>
                         <a
-                            href="#section4"
+                            href="#tailwind-card"
                             className="text-gray-800 hover:text-gray-600 transition duration-300"
                         >
-                            Section 4
+                            Tailwind Card
                         </a>
                     </div>
 
@@ -114,37 +114,41 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <a
-                        href="#section1"
+                        href="#react-re-render"
+                        onClick={toggleMenu}
                         className="text-gray-800 hover:text-gray-600 transition duration-300"
                     >
-                        Section 1
+                        React Re-Render
                     </a>
                     <a
-                        href="#section2"
+                        href="#flexbox-vs-grid"
+                        onClick={toggleMenu}
                         className="text-gray-800 hover:text-gray-600 transition duration-300"
                     >
-                        Section 2
+                        Flexbox vs Grid
                     </a>
                     <a
-                        href="#section3"
+                        href="#web-worker"
+                        onClick={toggleMenu}
                         className="text-gray-800 hover:text-gray-600 transition duration-300"
                     >
-                        Section 3
+                        Web Worker
                     </a>
                     <a
-                        href="#section4"
+                        href="#tailwind-card"
+                        onClick={toggleMenu}
                         className="text-gray-800 hover:text-gray-600 transition duration-300"
                     >
-                        Section 4
+                        Tailwind Card
                     </a>
                 </div>
             </div>
 
-            {/* Overlay for dimming the background */}
+            {/* Overlay */}
             {isMenuOpen && (
                 <div
                     onClick={toggleMenu}
-                    className="fixed inset-0 bg-black bg-opacity-20 z-30"
+                    className="fixed inset-0 bg-black bg-opacity-50 z-30"
                 ></div>
             )}
         </nav>
